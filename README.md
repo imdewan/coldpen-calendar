@@ -23,7 +23,7 @@ Coldpen Calendar is a productivity tool that helps you generate tweet ideas with
 2. **Install dependencies:**
 
    ```bash
-   npm install
+   bun install
    ```
 
 3. **Configure Firebase and Google Calendar API:**
@@ -33,7 +33,7 @@ Coldpen Calendar is a productivity tool that helps you generate tweet ideas with
 
 4. **Run the app:**
    ```bash
-   npm start
+   bun run dev
    ```
 
 ## Usage
@@ -51,7 +51,7 @@ Coldpen Calendar is a productivity tool that helps you generate tweet ideas with
 
 ## License
 
-MIT
+Apache 2.0
 
 ---
 
