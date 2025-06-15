@@ -73,14 +73,14 @@ export default function AuthPage() {
             />
           </div>
           <span className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-            Coldpen Calender
+            Coldpen Calendar
           </span>
         </div>
 
         <Card className="border-0 shadow-2xl bg-white/80 backdrop-blur-sm animate-fade-in-up animation-delay-200 hover:shadow-3xl transition-all duration-500">
           <CardHeader className="text-center pb-4">
             <CardTitle className="text-2xl bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
-              Welcome to Coldpen Calender
+              Welcome to Coldpen Calendar
             </CardTitle>
             <CardDescription className="text-gray-600 leading-relaxed">
               Sign in with Google to start creating AI-powered content and sync
