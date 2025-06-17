@@ -20,6 +20,7 @@ import {
   HeartHandshake,
   TicketCheck,
   Check,
+  Github,
 } from "lucide-react";
 
 export default function LandingPage() {
@@ -48,17 +49,31 @@ export default function LandingPage() {
               Coldpen Calendar
             </span>
           </div>
-          <Link href="/auth">
-            <Button className="bg-gradient-to-r from-blue-500 to-blue-800 hover:from-blue-600 hover:to-blue-900 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link>
+          <div className="flex gap-3">
+            <Link
+              href="https://github.com/imdewan/coldpen-calendar"
+              target="_blank"
+            >
+              <Button
+                variant="outline"
+                className="border-gray-300 hover:border-gray-500 flex items-center gap-2"
+              >
+                <Github className="h-5 w-5" />
+                GitHub
+              </Button>
+            </Link>
+            <Link href="/auth">
+              <Button className="bg-gradient-to-r from-blue-500 to-blue-800 hover:from-blue-600 hover:to-blue-900 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
         </nav>
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 container mx-auto px-4 py-20 text-center">
+      <section className="relative z-10 container mx-auto px-4 py-20 text-center ">
         <div className="max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight tracking-tight">
@@ -71,8 +86,8 @@ export default function LandingPage() {
           <div className="animate-fade-in-up animation-delay-200">
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
               Effortlessly turn your ideas into engaging tweets, schedule them
-              with AI, and track your growth. The all-in-one calendar for
-              creators, founders, and indie hackers.
+              with AI, and track your growth. 100% open source, free, and built
+              for creators, founders, and indie hackers.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-400">
@@ -85,84 +100,158 @@ export default function LandingPage() {
                 <Sparkles className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-lg px-8 py-4 border-2 border-gray-300 hover:border-purple-400 hover:bg-purple-50 transition-all duration-300 hover:scale-105"
+            <Link
+              href="https://github.com/imdewan/coldpen-calendar"
+              target="_blank"
             >
-              Watch Demo
-            </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 py-4 border-2 border-gray-300 hover:border-gray-700 hover:bg-gray-100 transition-all duration-300 hover:scale-105 flex items-center gap-2"
+              >
+                <Github className="h-5 w-5" />
+                View on GitHub
+              </Button>
+            </Link>
+          </div>
+          <div className="mt-4 text-gray-500 text-sm">
+            <span className="bg-gray-100 px-3 py-1 rounded-full font-semibold">
+              Open Source & Free Forever
+            </span>
           </div>
         </div>
       </section>
 
-      {/* Social Proof Section */}
-      <section className="relative z-10 container mx-auto px-4 py-10">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-          <div className="flex flex-col items-center">
-            <TrendingUp className="h-10 w-10 text-blue-600 mb-2" />
-            <span className="text-3xl font-bold text-gray-900">+2,000</span>
-            <span className="text-gray-500">Active Users</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <HeartHandshake className="h-10 w-10 text-pink-500 mb-2" />
-            <span className="text-3xl font-bold text-gray-900">98%</span>
-            <span className="text-gray-500">User Satisfaction</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <BarChart3 className="h-10 w-10 text-green-500 mb-2" />
-            <span className="text-3xl font-bold text-gray-900">10x</span>
-            <span className="text-gray-500">Faster Growth</span>
-          </div>
-        </div>
-      </section>
-
-      {/* Coldpen Promotion Section */}
-      <section className="relative z-10 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-800 text-white py-20">
+      {/* Open Source Section */}
+      <section className="relative z-10 bg-gradient-to-r from-gray-900 via-blue-900 to-gray-800 text-white py-16">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 text-center md:text-left">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              We are <span className="text-cyan-400">Coldpen</span>
+              100% Open Source & Free
             </h2>
             <p className="text-xl mb-6 opacity-90 max-w-xl">
-              <span className="font-bold text-cyan-300">coldpen.io</span> is the
-              no-BS, affordable, and easy-to-use cold mailing platform built for
-              founders, indie hackers, and small teams. Send cold emails that
-              land, manage campaigns with zero fluff, and grow your business
-              without breaking the bank.
+              Coldpen Calendar is built by the community, for the community. No
+              paywalls, no hidden fees, no limits. Contribute, fork, or
+              self-host — your workflow, your rules.
             </p>
             <a
-              href="https://coldpen.io"
+              href="https://github.com/imdewan/coldpen-calendar"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button
                 size="lg"
-                className="text-lg px-8 py-4 bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-500 hover:to-blue-800 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group"
+                className="text-lg px-8 py-4 bg-gradient-to-r from-gray-800 to-blue-600 hover:from-gray-700 hover:to-blue-800 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group flex items-center gap-2"
               >
-                Try coldpen for Free
-                <Mail className="ml-2 h-5 w-5" />
+                <Github className="h-5 w-5" />
+                Star on GitHub
               </Button>
             </a>
           </div>
           <div className="flex-1 flex flex-col items-center gap-6">
             <div className="flex items-center gap-4">
               <ShieldCheck className="h-8 w-8 text-yellow-400" />
-              <span className="text-lg">30-day money back</span>
+              <span className="text-lg">MIT Licensed</span>
             </div>
             <div className="flex items-center gap-4">
               <TrendingUp className="h-8 w-8 text-blue-400" />
-              <span className="text-lg">Affordable for all teams</span>
+              <span className="text-lg">Community Driven</span>
             </div>
             <div className="flex items-center gap-4">
               <Check className="h-8 w-8 text-green-400" />
-              <span className="text-lg">
-                Sequences, A/B testing, Universal Inbox
-              </span>
+              <span className="text-lg">Free Forever, No Credit Card</span>
             </div>
             <div className="flex items-center gap-4">
               <Users className="h-8 w-8 text-pink-400" />
-              <span className="text-lg">Loved by founders & indie hackers</span>
+              <span className="text-lg">Contributions Welcome</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Coldpen Promotion Section */}
+      <section className="relative z-10 bg-gradient-to-br from-cyan-50 via-blue-100 to-indigo-50 text-gray-900 py-20">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
+          {/* Left: Illustration */}
+          <div className="flex-1 flex justify-center items-center mb-10 md:mb-0 min-h-[320px]">
+            <div className="relative w-full max-w-[480px] aspect-[16/10]">
+              <Image
+                src="https://coldpen.io/dashboard.png"
+                alt="Coldpen Illustration"
+                fill
+                className="object-contain rounded-3xl shadow-2xl border-4 border-cyan-200"
+                priority
+                style={{ maxHeight: "100%" }}
+              />
+            </div>
+          </div>
+          {/* Right: Content */}
+          <div className="flex-1 text-center md:text-left">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
+              Discover{" "}
+              <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
+                coldpen.io
+              </span>
+            </h2>
+            <p className="text-lg md:text-xl mb-8 max-w-xl mx-auto md:mx-0 text-gray-700">
+              <span className="font-bold text-blue-700">coldpen.io</span> is the
+              no-nonsense, affordable cold email platform for founders and indie
+              hackers. Launch campaigns, track results, and grow your
+              business—no bloat, just results.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <a
+                href="https://coldpen.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  className="text-lg px-8 py-4 bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-500 hover:to-blue-800 text-white shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group"
+                >
+                  Try coldpen for Free
+                  <Mail className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+              <a
+                href="https://coldpen.io/features"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-lg px-8 py-4 border-2 border-cyan-400 hover:border-blue-600 hover:bg-cyan-50 transition-all duration-300 hover:scale-105 flex items-center gap-2"
+                >
+                  Learn More
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </div>
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
+              <div className="flex items-center gap-3">
+                <ShieldCheck className="h-7 w-7 text-yellow-400" />
+                <span className="text-base font-medium">
+                  30-day money back guarantee
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <TrendingUp className="h-7 w-7 text-blue-500" />
+                <span className="text-base font-medium">
+                  Affordable for all teams
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Check className="h-7 w-7 text-green-500" />
+                <span className="text-base font-medium">
+                  Sequences, A/B testing, Universal Inbox
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Users className="h-7 w-7 text-pink-400" />
+                <span className="text-base font-medium">
+                  Loved by founders & indie hackers
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -308,7 +397,7 @@ export default function LandingPage() {
             </h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90 leading-relaxed">
               Join thousands of creators using AI to grow their social media
-              presence.
+              presence. 100% open source and free forever.
             </p>
             <Link href="/auth">
               <Button
@@ -397,45 +486,20 @@ export default function LandingPage() {
             >
               coldpen.io
             </a>
+            <a
+              href="https://github.com/imdewan/coldpen-calendar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-4 flex items-center gap-1 hover:text-cyan-400"
+            >
+              <Github className="h-5 w-5" />
+              <span>GitHub</span>
+            </a>
           </div>
-          {/* <div className="flex items-center space-x-6 mb-4">
-            <a
-              href="https://twitter.com/coldpenio"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cyan-400 flex items-center space-x-1"
-            >
-              <svg
-                width="20"
-                height="20"
-                fill="currentColor"
-                className="inline-block"
-              >
-                <path d="M19.633 3.997a8.19 8.19 0 0 1-2.357.646A4.118 4.118 0 0 0 19.104 2.3a8.224 8.224 0 0 1-2.605.996A4.107 4.107 0 0 0 9.85 6.03a11.654 11.654 0 0 1-8.457-4.287a4.106 4.106 0 0 0 1.27 5.482A4.073 4.073 0 0 1 .8 6.575v.052a4.108 4.108 0 0 0 3.292 4.025a4.093 4.093 0 0 1-1.852.07a4.108 4.108 0 0 0 3.834 2.85A8.233 8.233 0 0 1 .98 17.54a11.616 11.616 0 0 0 6.29 1.844c7.547 0 11.675-6.155 11.675-11.49c0-.175-.004-.349-.012-.522A8.18 8.18 0 0 0 20 4.59a8.19 8.19 0 0 1-2.367.646z" />
-              </svg>
-              <span>@coldpenio</span>
-            </a>
-            <a
-              href="https://linkedin.com/company/coldpen"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cyan-400 flex items-center space-x-1"
-            >
-              <svg
-                width="20"
-                height="20"
-                fill="currentColor"
-                className="inline-block"
-              >
-                <path d="M16.5 3A2.5 2.5 0 0 1 19 5.5v9A2.5 2.5 0 0 1 16.5 17h-13A2.5 2.5 0 0 1 1 14.5v-9A2.5 2.5 0 0 1 3.5 3h13zm-8.25 4.25h-2.5v7.5h2.5v-7.5zm-1.25-1.5a1.25 1.25 0 1 0 0-2.5a1.25 1.25 0 0 0 0 2.5zm9 9h-2.5v-3.75c0-.966-.784-1.75-1.75-1.75s-1.75.784-1.75 1.75v3.75h-2.5v-7.5h2.5v1.09c.41-.65 1.13-1.09 1.95-1.09c1.38 0 2.5 1.12 2.5 2.5v5z" />
-              </svg>
-              <span>LinkedIn</span>
-            </a>
-          </div> */}
           <div className="text-center text-gray-400">
             <p>
-              &copy; {new Date().getFullYear()} Coldpen Calendar. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} Coldpen Calendar. Open Source.
+              MIT Licensed.
             </p>
           </div>
         </div>

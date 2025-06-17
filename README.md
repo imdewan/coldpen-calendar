@@ -16,7 +16,7 @@ Coldpen Calendar is a productivity tool that helps you generate tweet ideas with
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/coldpen-calendar.git
+   git clone https://github.com/imdewan/coldpen-calendar.git
    cd coldpen-calendar
    ```
 
@@ -29,6 +29,7 @@ Coldpen Calendar is a productivity tool that helps you generate tweet ideas with
 3. **Configure Firebase and Google Calendar API:**
 
    - Add your Firebase credentials to `.env` as given in env-example.txt
+   - Configure Firestore with proper rules.
    - Set up Google Calendar API and add credentials.
 
 4. **Run the app:**
