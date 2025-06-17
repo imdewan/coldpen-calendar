@@ -497,10 +497,7 @@ export default function LandingPage() {
             </a>
           </div>
           <div className="text-center text-gray-400">
-            <p>
-              &copy; {new Date().getFullYear()} Coldpen Calendar. Open Source.
-              MIT Licensed.
-            </p>
+            <p>&copy; {new Date().getFullYear()} Coldpen Calendar.</p>
           </div>
         </div>
       </footer>
